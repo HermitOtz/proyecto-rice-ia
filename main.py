@@ -11,13 +11,13 @@ from langchain_community.vectorstores import Chroma
 # 1. Configuración de credenciales y modelos
 load_dotenv()
 # Esto vincula automáticamente el JSON de Google con el cliente
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "prueba-tecnica-485800-d976f4007664.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "prueba-tecnica-485800-6616f4132edf.json"
 
 # En main.py
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-pro", # <--- Usamos el modelo Pro estable de la tabla
+    model="gemini-2.0-flash", 
     temperature=0,
-    model_kwargs={"api_version": "v1"} 
+    model_kwargs={"api_version": "v1"}
 )
 embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
 vectorstore = Chroma(persist_directory="./chroma_db", embedding_function=embeddings)
