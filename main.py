@@ -10,8 +10,6 @@ from langchain_community.vectorstores import Chroma
 
 # 1. Configuración de credenciales y modelos
 load_dotenv()
-# Esto vincula automáticamente el JSON de Google con el cliente
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "prueba-tecnica-485800-6616f4132edf.json"
 
 # En main.py
 llm = ChatGoogleGenerativeAI(
