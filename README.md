@@ -3,7 +3,7 @@
 Este proyecto implementa un sistema de IA capaz de responder preguntas sobre el Reglamento Interno de Convivencia Escolar (RICE) utilizando una arquitectura RAG.
 
 ## Características Técnicas
-- **LLM**: Gemini 2.5 pro.
+- **LLM**: Gemini 2.0 flash.
 - **Framework**: FastAPI + LangGraph para orquestación de agentes.
 - **Base de Datos**: ChromaDB con persistencia local.
 - **Ingesta**: Procesamiento por lotes (batch_size=50) para optimización de cuota de API.
